@@ -1,2 +1,2 @@
 # ecommerce_book_api
-Book story e_commerce API
+Book store e_commerce API
