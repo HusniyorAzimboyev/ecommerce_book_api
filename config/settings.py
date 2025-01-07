@@ -71,6 +71,8 @@ EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = 587  #465
 EMAIL_USE_TLS = True
 
+CELERY_BROKER_URL = os.environ.get("CELERY_BROKER_URL") # Redis
+CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND") #Redis
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
