@@ -15,7 +15,7 @@ class Order(models.Model):
     CANCELED = "Canceled"
 
     customer = models.CharField(max_length=100)
-    product_id = models.ForeignKey(Book, on_delete=models.CASCADE)
+    product = models.ForeignKey(Book, on_delete=models.CASCADE)
     quantity = models.SmallIntegerField()
     phone_number = models.CharField(max_length=20,validators=[phone_regex])
     created_at = models.DateTimeField(auto_now_add=True)
@@ -41,3 +41,5 @@ class Order(models.Model):
             self.save()
 
         return "Invalid status"
+    def __str__(self):
+        return f'product({self.product.id}) from {self.customer}'
