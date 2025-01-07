@@ -6,6 +6,7 @@ from drf_yasg.views import get_schema_view
 from rest_framework import permissions
 from .services import replanish_stock
 from . import signals
+from billing.views import CreateChargeView
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -33,6 +34,7 @@ router.register(r"flashsale",FlashSaleListCreateView,"flashsale")
 urlpatterns = [
     path("v1/",include(router.urls)),
     path('v1/admin/replanish_stock/<int:book_id>/<int:amount>',replanish_stock,name="replanish_stock"),
+    path('v1/billing/',CreateChargeView.as_view(),name="pay"),
 
     path('v1/auth/',include("djoser.urls")),
 

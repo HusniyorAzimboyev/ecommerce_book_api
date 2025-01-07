@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'stripe',
 
     'api',
+    'billing',
 
 ]
 REST_FRAMEWORK = {
@@ -73,6 +74,9 @@ EMAIL_USE_TLS = True
 
 CELERY_BROKER_URL = os.environ.get("CELERY_BROKER_URL") # Redis
 CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND") #Redis
+
+STRIPE_PUBLISHABLE_KEY = os.environ.get("STRIPE_PUBLISHABLE_KEY")
+STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
