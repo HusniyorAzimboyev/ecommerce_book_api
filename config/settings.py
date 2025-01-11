@@ -49,13 +49,17 @@ INSTALLED_APPS = [
 
     'api',
     'billing',
-
+    'sms_auth',
 ]
+
+AUTH_USER_MODEL = 'sms_auth.CustomUser'
+
 REST_FRAMEWORK = {
     "DFAULT_PAGINATION_CLASS":"rest_framework.pagination.PageNumberPagination",
     "DEFAULT_PAGE_SIZE":10,
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ]
 }
 DJOSER = {
@@ -77,6 +81,8 @@ CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND") #Redis
 
 STRIPE_PUBLISHABLE_KEY = os.environ.get("STRIPE_PUBLISHABLE_KEY")
 STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
+
+SMS_KEY = os.environ.get("SMS_KEY")
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

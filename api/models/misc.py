@@ -1,14 +1,14 @@
 from django.utils import timezone
 from django.db import models
-from django.contrib.auth.models import User
 from api.models import Book
-
+from sms_auth.models import CustomUser
+User = CustomUser
 
 class Review(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     book = models.ForeignKey(Book, on_delete=models.CASCADE,related_name="reviews")
     message = models.TextField(null=True, blank=True)
-    rating = models.SmallIntegerField(max_length=2)
+    rating = models.SmallIntegerField()
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
