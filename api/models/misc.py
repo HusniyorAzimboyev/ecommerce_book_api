@@ -1,8 +1,8 @@
 from django.utils import timezone
 from django.db import models
 from api.models import Book
-from sms_auth.models import CustomUser
-User = CustomUser
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 class Review(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)

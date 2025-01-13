@@ -27,6 +27,6 @@ class Book(models.Model):
     def reduce_stock(self,quantity):
         self.stock-=quantity
         self.save()
-        return f'Reduced tp {self.stock}'
+        return f'Reduced to {self.stock}'
     def __str__(self):
         return f'{self.title}({self.stock})'

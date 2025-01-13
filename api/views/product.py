@@ -33,11 +33,11 @@ class ProductViewSet(ModelViewSet):
             'related_books':related_serializer.data
         })
     @action(detail=True,methods=["GET"])
-    def avarage_rating(self,request,pk=None):
+    def average_rating(self,request,pk=None):
         product = self.get_object()
         reviews = product.reviews.all()
 
         if reviews.count()==0:
             return Response({"message":"There is no reviews yet("})
 
-        return Response({"avarage_rating":sum([review.rating for review in reviews])/reviews.count()})
+        return Response({"average_rating":sum([review.rating for review in reviews])/reviews.count()})

@@ -35,7 +35,7 @@ schema_view = get_schema_view(
 
 
 router = DefaultRouter()
-router.register(r"Books",ProductViewSet,"books")
+router.register(r"book",ProductViewSet)
 router.register(r"order",OrderViewSet,"order")
 router.register(r"review",ReviewViewSet,"review")
 router.register(r"author",AuthorViewSet,"author")
