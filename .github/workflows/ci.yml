@@ -3,10 +3,10 @@ name: Django CI
 on:
   push:
     branches:
-      - main  # Run tests on push to the 'main' branch
+      - main
   pull_request:
     branches:
-      - main  # Run tests on pull requests to the 'main' branch
+      - main
 
 jobs:
   test:
@@ -21,7 +21,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.11  # Specify the Python version you're using
+        python-version: 3.9
 
     # Install dependencies
     - name: Install dependencies
@@ -29,17 +29,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # Set up the database
-    - name: Run database migrations
-      run: python manage.py migrate
-
-    # Run the tests
+    # Run tests with secrets
     - name: Run tests
+      env:
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        STRIPE_PUBLISHABLE_KEY: ${{ secrets.STRIPE_PUBLISHABLE_KEY }}
+        STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        ADMIN_ID: ${{ secrets.ADMIN_ID }}
       run: python manage.py test
-
-    # Optionally collect test coverage
-    - name: Run tests with coverage
-      run: |
-        pip install coverage
-        coverage run manage.py test
-        coverage report
