@@ -1,0 +1,268 @@
+- model: api.Genre
+  pk: 1
+  fields:
+    name: "Programming"
+- model: api.Genre
+  pk: 2
+  fields:
+    name: "Web Development"
+- model: api.Genre
+  pk: 3
+  fields:
+    name: "Machine Learning"
+- model: api.Genre
+  pk: 4
+  fields:
+    name: "Data Science"
+- model: api.Genre
+  pk: 5
+  fields:
+    name: "JavaScript"
+- model: api.Genre
+  pk: 6
+  fields:
+    name: "Software Engineering"
+- model: api.Genre
+  pk: 7
+  fields:
+    name: "Cybersecurity"
+- model: api.Genre
+  pk: 8
+  fields:
+    name: "Artificial Intelligence"
+- model: api.Genre
+  pk: 9
+  fields:
+    name: "Database Systems"
+- model: api.Genre
+  pk: 10
+  fields:
+    name: "Cloud Computing"
+- model: api.Author
+  pk: 1
+  fields:
+    name: "John Doe"
+    age: 45
+- model: api.Author
+  pk: 2
+  fields:
+    name: "Jane Smith"
+    age: 38
+- model: api.Author
+  pk: 3
+  fields:
+    name: "Michael Johnson"
+    age: 50
+- model: api.Author
+  pk: 4
+  fields:
+    name: "Emily Davis"
+    age: 42
+- model: api.Author
+  pk: 5
+  fields:
+    name: "Robert Brown"
+    age: 47
+- model: api.Author
+  pk: 6
+  fields:
+    name: "Jessica Wilson"
+    age: 35
+- model: api.Author
+  pk: 7
+  fields:
+    name: "David Miller"
+    age: 55
+- model: api.Author
+  pk: 8
+  fields:
+    name: "Sarah Taylor"
+    age: 39
+- model: api.Author
+  pk: 9
+  fields:
+    name: "Daniel Anderson"
+    age: 44
+- model: api.Author
+  pk: 10
+  fields:
+    name: "Laura Martinez"
+    age: 41
+# ... (continue up to 100 authors)
+
+- model: api.Book
+  pk: 1
+  fields:
+    author: 1
+    title: "Django for Beginners"
+    genre: 1
+    pages: 320
+    description: "A guide to learning Django from scratch."
+    price: 25
+    stock: 10
+- model: api.Book
+  pk: 2
+  fields:
+    author: 2
+    title: "Advanced Django"
+    genre: 2
+    pages: 450
+    description: "Deep dive into Django's advanced features."
+    price: 35
+    stock: 15
+- model: api.Book
+  pk: 3
+  fields:
+    author: 3
+    title: "Python Tricks"
+    genre: 1
+    pages: 280
+    description: "A collection of useful Python tricks."
+    price: 20
+    stock: 5
+- model: api.Book
+  pk: 4
+  fields:
+    author: 4
+    title: "Flask Web Development"
+    genre: 3
+    pages: 350
+    description: "Building web apps with Flask."
+    price: 30
+    stock: 12
+- model: api.Book
+  pk: 5
+  fields:
+    author: 5
+    title: "RESTful APIs with Django"
+    genre: 2
+    pages: 300
+    description: "Learn how to build APIs with Django and DRF."
+    price: 28
+    stock: 20
+- model: api.Book
+  pk: 6
+  fields:
+    author: 6
+    title: "Machine Learning with Python"
+    genre: 4
+    pages: 500
+    description: "An introduction to machine learning using Python."
+    price: 40
+    stock: 8
+- model: api.Book
+  pk: 7
+  fields:
+    author: 7
+    title: "Data Science from Scratch"
+    genre: 4
+    pages: 600
+    description: "Learn data science without prior knowledge."
+    price: 45
+    stock: 5
+- model: api.Book
+  pk: 8
+  fields:
+    author: 8
+    title: "JavaScript: The Good Parts"
+    genre: 5
+    pages: 200
+    description: "A deep dive into JavaScript essentials."
+    price: 18
+    stock: 25
+- model: api.Book
+  pk: 9
+  fields:
+    author: 9
+    title: "You Don't Know JS"
+    genre: 5
+    pages: 320
+    description: "Understanding JavaScript deeply."
+    price: 22
+    stock: 18
+- model: api.Book
+  pk: 10
+  fields:
+    author: 10
+    title: "The Pragmatic Programmer"
+    genre: 6
+    pages: 350
+    description: "A must-read for software developers."
+    price: 32
+    stock: 14
+- model: api.Flashsale
+  pk: 1
+  fields:
+    book: 1
+    discount_perc: 20
+    start_time: "2025-02-01T10:00:00Z"
+    end_time: "2025-02-07T23:59:59Z"
+- model: api.Flashsale
+  pk: 2
+  fields:
+    book: 2
+    discount_perc: 15
+    start_time: "2025-02-02T08:00:00Z"
+    end_time: "2025-02-09T23:59:59Z"
+- model: api.Flashsale
+  pk: 3
+  fields:
+    book: 3
+    discount_perc: 30
+    start_time: "2025-02-03T12:00:00Z"
+    end_time: "2025-02-10T23:59:59Z"
+- model: api.FlashSale
+  pk: 1
+  fields:
+    book: 1
+    discount_perc: 20
+    start_time: "2025-01-28T08:00:00Z"  # Active now
+    end_time: "2025-01-28T20:00:00Z"
+
+- model: api.FlashSale
+  pk: 2
+  fields:
+    book: 2
+    discount_perc: 15
+    start_time: "2025-01-25T12:00:00Z"  # Active now
+    end_time: "2025-01-29T12:00:00Z"
+
+- model: api.FlashSale
+  pk: 3
+  fields:
+    book: 3
+    discount_perc: 25
+    start_time: "2025-01-31T10:00:00Z"  # Starts in 3 days
+    end_time: "2025-02-05T10:00:00Z"
+
+- model: api.FlashSale
+  pk: 4
+  fields:
+    book: 4
+    discount_perc: 30
+    start_time: "2025-01-31T00:00:00Z"
+    end_time: "2025-02-07T23:59:59Z"
+
+- model: api.FlashSale
+  pk: 5
+  fields:
+    book: 5
+    discount_perc: 10
+    start_time: "2025-01-20T09:00:00Z"
+    end_time: "2025-01-25T09:00:00Z"
+
+- model: api.FlashSale
+  pk: 6
+  fields:
+    book: 6
+    discount_perc: 50
+    start_time: "2025-01-28T00:00:00Z"
+    end_time: "2025-01-30T23:59:59Z"
+
+- model: api.FlashSale
+  pk: 7
+  fields:
+    book: 7
+    discount_perc: 40
+    start_time: "2025-01-31T08:00:00Z"
+    end_time: "2025-02-03T20:00:00Z"
