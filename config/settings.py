@@ -113,7 +113,7 @@ DATABASES = {
     }
 }
 
-POSTGRES_LOCALLY = False
+POSTGRES_LOCALLY = True
 if POSTGRES_LOCALLY==True:
     DATABASES["default"]=dj_database_url.parse(os.getenv("DATABASE_URL"))
 
