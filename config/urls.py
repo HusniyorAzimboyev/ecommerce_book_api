@@ -34,11 +34,11 @@ class JWTSchemaGenerator(OpenAPISchemaGenerator):
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Your Project API",
+        title="E-Book shop API",
         default_version='v1',
-        description="API documentation for your project",
+        description="API documentation for Online Book shop",
         terms_of_service="https://www.google.com/policies/terms/",
-        contact=openapi.Contact(email="your.email@example.com"),
+        contact=openapi.Contact(email="husniyor09@gmail.com"),
         license=openapi.License(name="BSD License"),
     ),
     public=True,
