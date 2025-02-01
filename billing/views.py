@@ -21,7 +21,7 @@ class CreateChargeView(views.APIView):
         try:
             total_amount = order.product.price * order.quantity
             charge = stripe.Charge.create(
-                amount=int(total_amount),
+                amount=int(total_amount)*100,
                 currency="usd",
                 source=stripe_token,
             )
