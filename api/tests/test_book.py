@@ -59,6 +59,8 @@ class BookViewSetTestCase(test.APITestCase):
         data = {'name': 'Test Product', 'description': 'This is a test product', 'price': 10.00}
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+
+
     # def test_permission_granted_for_staff(self):
     #     url = reverse('book-list')
     #     self.client.force_authenticate(self.staff_user)
