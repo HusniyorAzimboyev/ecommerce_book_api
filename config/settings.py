@@ -5,6 +5,8 @@ import dj_database_url
 
 load_dotenv()
 
+ENVIRONMENT = os.getenv("ENVIRONMENT")
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -82,13 +84,13 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
 ]
+if ENVIRONMENT=="product":
+    CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ALLOW_ALL_ORIGINS = True
-
-SECURE_SSL_REDIRECT = True  # Redirect HTTP to HTTPS
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SESSION_COOKIE_SECURE = True  # Secure cookies over HTTPS
-CSRF_COOKIE_SECURE = True  # Secure CSRF cookie over HTTPS
+    SECURE_SSL_REDIRECT = True  # Redirect HTTP to HTTPS
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SESSION_COOKIE_SECURE = True  # Secure cookies over HTTPS
+    CSRF_COOKIE_SECURE = True  # Secure CSRF cookie over HTTPS
 
 
 ROOT_URLCONF = 'config.urls'
@@ -126,8 +128,8 @@ DATABASES = {
     }
 }
 
-POSTGRES_LOCALLY = True
-if POSTGRES_LOCALLY==True:
+POSTGRES_LOCALLY = False
+if POSTGRES_LOCALLY==True or ENVIRONMENT=="product":
     DATABASES["default"]=dj_database_url.parse(os.getenv("DATABASE_URL"))
 
 # Password validation

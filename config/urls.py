@@ -21,6 +21,7 @@ from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework import permissions
 from drf_yasg.generators import OpenAPISchemaGenerator
+from django.conf import settings
 
 class JWTSchemaGenerator(OpenAPISchemaGenerator):
     def get_security_definitions(self):
@@ -44,8 +45,22 @@ schema_view = get_schema_view(
     public=True,
     permission_classes=(permissions.AllowAny,),
     generator_class=JWTSchemaGenerator,
-    url='https://ecommercebookapi-production.up.railway.app/api/v1'
 )
+if settings.ENVIRONMENT=="product":
+    schema_view = get_schema_view(
+        openapi.Info(
+            title="E-Book shop API",
+            default_version='v1',
+            description="API documentation for Online Book shop",
+            terms_of_service="https://www.google.com/policies/terms/",
+            contact=openapi.Contact(email="husniyor09@gmail.com"),
+            license=openapi.License(name="BSD License"),
+        ),
+        public=True,
+        permission_classes=(permissions.AllowAny,),
+        generator_class=JWTSchemaGenerator,
+        url='https://ecommercebookapi-production.up.railway.app/api/v1'
+    )
 
 
 urlpatterns = [
