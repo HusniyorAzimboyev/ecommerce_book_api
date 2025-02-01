@@ -15,7 +15,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
 
 
 class GenreViewSet(viewsets.ModelViewSet):
-    permission_classes = [IsStaff]
+    permission_classes = [IsAuthenticated]
     queryset = Genre.objects.all()
     serializer_class = GenreSer
 
@@ -24,7 +24,7 @@ class AuthorViewSet(viewsets.ModelViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorSer
 
-class FlashSaleListCreateView(viewsets.ModelViewSet):
+class FlashSaleViewSet(viewsets.ModelViewSet):
     permission_classes = [IsStaff]
     queryset = Flashsale.objects.all()
     serializer_class = FlashSaleSer

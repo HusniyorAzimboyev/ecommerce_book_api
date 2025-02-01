@@ -1,11 +1,26 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework.serializers import ModelSerializer,SerializerMethodField
 from api.models import *
+from rest_framework import serializers
+from django.utils import timezone
 
+class BookSer(serializers.ModelSerializer):
+    active_sale = serializers.SerializerMethodField()
 
-class BookSer(ModelSerializer):
     class Meta:
         model = Book
-        fields = "__all__"
+        fields = ['id', 'title', 'author', 'genre', 'pages', 'description', 'price', 'stock', 'active_sale']
+
+    def get_active_sale(self, obj):
+        now = timezone.now()
+        flash_sale = Flashsale.objects.filter(book=obj, start_time__lte=now, end_time__gte=now).first()
+        return {
+            "discount_perc": flash_sale.discount_perc,
+            "start_time": flash_sale.start_time,
+            "end_time": flash_sale.end_time
+        } if flash_sale else None
+
+
+
 
 
 class GenreSer(ModelSerializer):

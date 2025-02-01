@@ -1,13 +1,12 @@
-import datetime
-
+from api.services import calculate_total_price
 from rest_framework.serializers import ModelSerializer,SerializerMethodField,ValidationError
 from api.models import Order,Book
 from django.core.exceptions import ObjectDoesNotExist
-from rest_framework.response import Response
 class OrderSer(ModelSerializer):
     total_price = SerializerMethodField()
     def get_total_price(self,obj):
-        return obj.product.price * obj.quantity
+        total_price = calculate_total_price(obj)
+        return total_price
 
     class Meta:
         model = Order

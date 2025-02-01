@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import dj_database_url
 
 load_dotenv()
 
@@ -31,9 +32,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    'djoser',
     'drf_yasg',
     'stripe',
+    'djoser',
 
     'api',
     'billing',
@@ -45,19 +46,12 @@ AUTH_USER_MODEL = 'sms_auth.CustomUser'
 REST_FRAMEWORK = {
     "DFAULT_PAGINATION_CLASS":"rest_framework.pagination.PageNumberPagination",
     "DEFAULT_PAGE_SIZE":10,
-    "DEFAULT_PAGE_SIZE":10,
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ]
 }
-DJOSER = {
-    'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
-    'USERNAME_RESET_CONFIRM_URL': '#/username/reset/confirm/{uid}/{token}',
-    'ACTIVATION_URL': '#/activate/{uid}/{token}',
-    'SEND_ACTIVATION_EMAIL': True,
-    'SERIALIZERS': {},
-}
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
@@ -72,6 +66,7 @@ STRIPE_PUBLISHABLE_KEY = os.environ.get("STRIPE_PUBLISHABLE_KEY")
 STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 
 SMS_KEY = os.environ.get("SMS_KEY")
+SMS_BASE_URL = os.getenv("SMS_BASE_URL")
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -118,6 +113,9 @@ DATABASES = {
     }
 }
 
+POSTGRES_LOCALLY = True
+if POSTGRES_LOCALLY==True:
+    DATABASES["default"]=dj_database_url.parse(os.getenv("DATABASE_URL"))
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

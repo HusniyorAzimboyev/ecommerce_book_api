@@ -16,7 +16,7 @@ class Review(models.Model):
 
 
 class Flashsale(models.Model):
-    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE,related_name="sale")
     discount_perc = models.SmallIntegerField()
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()

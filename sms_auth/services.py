@@ -8,9 +8,10 @@ def send_sms_via_infobip(serializer):
     phone_number = serializer.validated_data["phone_number"]
 
     verification_code = str(random.randint(100000, 999999))
+    print(verification_code)
 
     # Send SMS via Infobip
-    url = 'https://qd1gmq.api.infobip.com/sms/2/text/advanced'
+    url = f'https://{settings.SMS_BASE_URL}/sms/2/text/advanced'
     headers = {
         'Authorization': f'App {SMS_KEY}',
         'Content-Type': 'application/json',
