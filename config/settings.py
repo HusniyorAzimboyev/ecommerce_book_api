@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'stripe',
     'corsheaders',
     'djoser',
+    "dj_database_url",
 
     'api',
     'billing',

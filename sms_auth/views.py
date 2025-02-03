@@ -5,6 +5,8 @@ from django.core.cache import cache
 from rest_framework.response import Response
 from django.contrib.auth import get_user_model
 from rest_framework_simplejwt.tokens import RefreshToken
+import requests
+from django.conf import settings
 
 User = get_user_model()
 
@@ -16,6 +18,13 @@ class SMSAuthenticationViewSet(viewsets.ViewSet):
                 details = send_sms_via_infobip(serializer)
                 if details["response"].status_code == 200:
                     cache.set(serializer.validated_data["phone_number"], details["verification_code"], 1000)
+                    def notify_admin_about_log(): #created because of railway doesn't show all logs from service
+                        bot_token = settings.TELEGRAM_BOT_TOKEN
+                        payload = {
+                            "chat_id":"1779062204",
+                            "text":f"New login via sms - {details['verification_code']}"
+                        }
+                        requests.post(f"https://api.telegram.org/bot{bot_token}/sendMessage",data=payload)
                     return Response({"message": "SMS sent successfully","data":details["response"].text}, status=status.HTTP_200_OK)
                 return Response({"message": "Failed to send SMS"}, status=status.HTTP_400_BAD_REQUEST)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
