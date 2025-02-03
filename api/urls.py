@@ -24,6 +24,6 @@ urlpatterns = [
     path('v1/admin/replanish_stock/<int:book_id>/<int:amount>',replanish_stock,name="replanish_stock"),
     path('v1/billing/',CreateChargeView.as_view(),name="pay"),
     path('v1/sms_auth/send_sms/',SMSAuthenticationViewSet.as_view({"post":"send_sms"})),
-    path('v1/sms_auth/sms_auth/verify_sms/',SMSAuthenticationViewSet.as_view({"post":"verify_sms"})),
+    path('v1/sms_auth/verify_sms/',SMSAuthenticationViewSet.as_view({"post":"verify_sms"})),
 
 ]
