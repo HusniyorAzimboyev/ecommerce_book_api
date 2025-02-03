@@ -54,7 +54,7 @@ REST_FRAMEWORK = {
     "DFAULT_PAGINATION_CLASS":"rest_framework.pagination.PageNumberPagination",
     "DEFAULT_PAGE_SIZE":10,
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ]
 }
