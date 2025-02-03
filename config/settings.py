@@ -19,6 +19,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+if ENVIRONMENT=="product":
+    DEBUG=False
 
 ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', 'ecommercebookapi-production.up.railway.app' ]
 
