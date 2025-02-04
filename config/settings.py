@@ -22,9 +22,9 @@ DEBUG = True
 if ENVIRONMENT=="product":
     DEBUG=False
 
-ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', 'ecommercebookapi-production.up.railway.app' ]
+ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', 'ecommercebookapi.up.railway.app' ]
 
-CSRF_TRUSTED_ORIGINS = ["https://ecommercebookapi-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://ecommercebookapi.up.railway.app"]
 
 # Application definition
 
