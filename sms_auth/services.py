@@ -23,7 +23,7 @@ def send_sms_via_infobip(serializer):
     "messages": [
         {
             "destinations": [{"to":phone_number}],
-            "from": "Book_ecommerce_Hugo",
+            "from": "HBooks.uz",
             "text": f"your verification code is {verification_code}"
         }
     ]
