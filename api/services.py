@@ -27,5 +27,5 @@ def calculate_total_price(order):
     total_price = order.product.price * order.quantity
     active_sale_for_product = get_active_sale(product_id=order.product.id)
     if active_sale_for_product:
-        total_price = (total_price / 100) * active_sale_for_product.discount_perc
+        total_price = total_price-((total_price / 100) * active_sale_for_product.discount_perc)
     return total_price
