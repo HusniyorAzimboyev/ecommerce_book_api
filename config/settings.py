@@ -18,13 +18,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-if ENVIRONMENT=="product":
-    DEBUG=False
+DEBUG = False
 
-ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', 'ecommercebookapi-production.up.railway.app',"api.azimboyev.uz"]
+ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', "api.azimboyev.uz"]
 
-CSRF_TRUSTED_ORIGINS = ["https://ecommercebookapi-production.up.railway.app","https://api.azimboyev.uz"]
+CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz"]
 
 # Application definition
 
