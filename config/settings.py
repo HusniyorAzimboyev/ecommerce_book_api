@@ -24,7 +24,7 @@ if ENVIRONMENT=="product":
 
 ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', 'ecommercebookapi-production.up.railway.app',"api.azimboyev.uz"]
 
-CSRF_TRUSTED_ORIGINS = ["https://ecommercebookapi-production.up.railway.app","api.azimboyev.uz"]
+CSRF_TRUSTED_ORIGINS = ["https://ecommercebookapi-production.up.railway.app","https://api.azimboyev.uz"]
 
 # Application definition
 
