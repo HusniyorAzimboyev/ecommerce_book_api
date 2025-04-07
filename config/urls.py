@@ -59,7 +59,7 @@ if settings.ENVIRONMENT=="product":
         public=True,
         permission_classes=(permissions.AllowAny,),
         generator_class=JWTSchemaGenerator,
-        url='https://ecommercebookapi-production.up.railway.app/api/v1'
+        url='https://api.azimboyev.uz/api/v1'
     )
 
 

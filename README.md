@@ -14,7 +14,7 @@ A robust and scalable E-Commerce Book API 📚 built with Django REST Framework 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/ecommerce-book-api.git
+   git clone https://github.com/HusniyorAzimboyev/ecommerce_book_api.git
    cd ecommerce-book-api
    ```
 
