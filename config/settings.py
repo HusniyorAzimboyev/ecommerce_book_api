@@ -22,7 +22,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', "api.azimboyev.uz"]
 
-CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz"]
+CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz","http://localhost:8000"]
 
 # Application definition
 
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'api',
     'billing',
     'sms_auth',
+    'aiagent',
 ]
 
 AUTH_USER_MODEL = 'sms_auth.CustomUser'
@@ -52,7 +53,7 @@ REST_FRAMEWORK = {
     "DFAULT_PAGINATION_CLASS":"rest_framework.pagination.PageNumberPagination",
     "DEFAULT_PAGE_SIZE":10,
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        # 'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ]
 }

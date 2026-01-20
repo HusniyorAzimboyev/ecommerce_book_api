@@ -65,6 +65,7 @@ if settings.ENVIRONMENT=="product":
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("ai/",include("aiagent.urls")),
     path("api/",include("api.urls")),
     # path("api/v1/sms_auth/",include("sms_auth.urls")),
 
