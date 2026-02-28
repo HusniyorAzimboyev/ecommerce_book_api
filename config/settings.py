@@ -20,9 +20,11 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', "api.azimboyev.uz"]
-
-CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz","http://localhost:8000"]
+# ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', "api.azimboyev.uz","https://5d384cfbcec7.ngrok-free.app"]
+ALLOWED_HOSTS = ["*"]
+CORS_ALLOW_ALL_ORIGINS = True
+CSRF_TRUSTED_ORIGINS = ["*"]
+# CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz","http://localhost:8000","https://5d384cfbcec7.ngrok-free.app"]
 
 # Application definition
 
@@ -33,11 +35,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'corsheaders',
     'rest_framework',
     'drf_yasg',
     'stripe',
-    'corsheaders',
     'djoser',
     "dj_database_url",
 
@@ -74,6 +75,7 @@ SMS_KEY = os.environ.get("SMS_KEY")
 SMS_BASE_URL = os.getenv("SMS_BASE_URL")
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -83,7 +85,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
 ]
 if ENVIRONMENT=="product":

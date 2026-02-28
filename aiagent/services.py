@@ -60,15 +60,9 @@ Multiple choice: Which pace do you prefer?
 - Books may be fiction or non-fiction, depending on user preference
 - Emotional impact is more important than genre
 - Do NOT mention the survey or analysis in the output
+- Respond in a friendly, conversational tone 
+- Do NOT use JSON format in your response
 
-OUTPUT REQUIREMENTS:
-- Respond ONLY in valid JSON
-- JSON must contain:
-  - a list called "recommended_books" (array of strings)
-  - an object called "book_descriptions" where:
-    - keys are book titles
-    - values are short emotional explanations (2–3 sentences)
-- Do NOT include anything outside the JSON
 📌 Description Guidelines
 
 - 2–3 sentences max per book
@@ -78,27 +72,28 @@ OUTPUT REQUIREMENTS:
 - No technical analysis
 
 🚫 IMPORTANT CONSTRAINTS
-
-- Do NOT output anything outside the JSON
 - Do NOT exceed 7 books
 - Do NOT repeat descriptions
 - Do NOT recommend books that conflict with the user's dislikes
+- Do NOT format response as JSON
 
 🌟 GOAL
 
-The final recommendations should feel: personal, emotionally intelligent, comforting or inspiring, like they were chosen by someone who truly understood the reader. Here are person's answers for questions above: {surveyr}"""
+The final recommendations should feel: personal, emotionally intelligent, comforting or inspiring, like they were chosen by someone who truly understood the reader. Books from Uzbek literature is preferred. Here are person's answers for questions above: {surveyr}, use html as parser I mean use <br> instead of \'\n\' etc"""
             }
         ],
         "web_access": False
     }
     headers = {
-        "x-rapidapi-key": "54048b746fmshda22903440ad421p1034c5jsn64cb525b2b1b",
-        "x-rapidapi-host": "chatgpt-42.p.rapidapi.com",
+        # "x-rapidapi-key": "54048b746fmshda22903440ad421p1034c5jsn64cb525b2b1b",
+        # "x-rapidapi-host": "chatgpt-42.p.rapidapi.com",
+
+        'x-rapidapi-key': "eb74dacf31msh6bf82c62c2d0123p1fc187jsnc8fd36e01345",
+        'x-rapidapi-host': "chatgpt-42.p.rapidapi.com",
         "Content-Type": "application/json"
     }
 
     response = requests.post(url, json=payload, headers=headers)
     return response.json()
 
-dummy_result = {1:"adventure",2:"sci-fi",3:"yes",4:"love",5:"yes",6:"confusing timelines",7:"Deep and intense",8:'Balanced'}
-print(ai_recommends(dummy_result))
+
