@@ -2,13 +2,15 @@ from rest_framework.serializers import ModelSerializer,SerializerMethodField
 from api.models import *
 from rest_framework import serializers
 from django.utils import timezone
+from django.shortcuts import get_object_or_404
 
 class BookSer(serializers.ModelSerializer):
     active_sale = serializers.SerializerMethodField()
-
+    author = serializers.StringRelatedField()
+    genre = serializers.StringRelatedField()
     class Meta:
         model = Book
-        fields = ['id', 'title', 'author', 'genre', 'pages', 'description', 'price', 'stock', 'active_sale']
+        fields = ['id', 'title', 'author', 'genre', 'pages', 'description', 'price', 'stock', 'active_sale','cover','pdf']
 
     def get_active_sale(self, obj):
         now = timezone.now()

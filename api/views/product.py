@@ -10,7 +10,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import action
 from django.utils import timezone
 class CustomPagination(PageNumberPagination):
-    page_size = 5
+    page_size = 8
 
 class ProductViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]

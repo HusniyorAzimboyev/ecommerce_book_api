@@ -18,13 +18,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', "api.azimboyev.uz","https://5d384cfbcec7.ngrok-free.app"]
 ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
-# CSRF_TRUSTED_ORIGINS = ["http://localhost:5500","https://api.azimboyev.uz","http://localhost:8000"]
-CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz","http://api.azimboyev.uz"]
+CSRF_TRUSTED_ORIGINS = ["http://localhost:5500","https://api.azimboyev.uz","http://api.azimboyev.uz","http://localhost:8000"]
+# CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz",]
 
 # Application definition
 
@@ -180,3 +180,6 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

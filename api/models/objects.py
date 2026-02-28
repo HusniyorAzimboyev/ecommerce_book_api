@@ -15,6 +15,8 @@ class Book(models.Model):
     author = models.ForeignKey(Author,on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     genre = models.ForeignKey(Genre,on_delete=models.SET_NULL,null=True)
+    cover = models.ImageField(upload_to='books/covers/', null=True, blank=True)
+    pdf = models.FileField(upload_to='books/pdfs/', null=True, blank=True)
     pages = models.SmallIntegerField()
     description = models.TextField()
     price = models.SmallIntegerField(null=False,blank=False)
