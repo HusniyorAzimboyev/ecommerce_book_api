@@ -23,8 +23,8 @@ DEBUG = False
 # ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', "api.azimboyev.uz","https://5d384cfbcec7.ngrok-free.app"]
 ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
-CSRF_TRUSTED_ORIGINS = ["*"]
-# CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz","http://localhost:8000","https://5d384cfbcec7.ngrok-free.app"]
+# CSRF_TRUSTED_ORIGINS = ["http://localhost:5500","https://api.azimboyev.uz","http://localhost:8000"]
+CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz","https://api.azimboyev.uz"]
 
 # Application definition
 
