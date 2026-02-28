@@ -24,7 +24,7 @@ DEBUG = False
 ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
 # CSRF_TRUSTED_ORIGINS = ["http://localhost:5500","https://api.azimboyev.uz","http://localhost:8000"]
-CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz","https://api.azimboyev.uz"]
+CSRF_TRUSTED_ORIGINS = ["https://api.azimboyev.uz","http://api.azimboyev.uz"]
 
 # Application definition
 
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 ]
 
 AUTH_USER_MODEL = 'sms_auth.CustomUser'
+
 
 REST_FRAMEWORK = {
     "DFAULT_PAGINATION_CLASS":"rest_framework.pagination.PageNumberPagination",
