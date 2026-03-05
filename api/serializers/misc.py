@@ -6,11 +6,9 @@ from django.shortcuts import get_object_or_404
 
 class BookSer(serializers.ModelSerializer):
     active_sale = serializers.SerializerMethodField()
-    author = serializers.StringRelatedField()
-    genre = serializers.StringRelatedField()
     class Meta:
         model = Book
-        fields = ['id', 'title', 'author', 'genre', 'pages', 'description', 'price', 'stock', 'active_sale','cover','pdf']
+        fields = ['id', 'title', 'author_name', 'genre_name', 'pages', 'description', 'price', 'stock', 'active_sale','cover','pdf']
 
     def get_active_sale(self, obj):
         now = timezone.now()

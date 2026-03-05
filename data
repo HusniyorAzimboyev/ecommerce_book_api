@@ -1,0 +1,1546 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-01-21T14:52:22.441Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "+998903198457",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-02-01T10:09:02.904Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "3",
+    "object_repr": "+998903198457",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-02-28T10:52:45.911Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Advanced Django(15)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\", \"Pdf\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-02-28T11:43:00.520Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "You Don't Know JS(18)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-02-28T11:43:54.731Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Men(Bas qil ey nafs)(0)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-02-28T11:44:42.788Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "The Pragmatic Programmer(14)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-02-28T11:55:45.368Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "JavaScript: The Good Parts(25)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-02-28T12:01:53.519Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Data Science from Scratch(5)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-02-28T12:02:24.711Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Machine Learning with Python(8)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-02-28T12:03:06.730Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "RESTful APIs with Django(20)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-02-28T12:03:35.341Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Python Tricks(5)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-02-28T12:04:32.528Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Django for Beginners(10)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-02-28T12:05:33.922Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Flask Web Development(12)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add author",
+    "content_type": 6,
+    "codename": "add_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change author",
+    "content_type": 6,
+    "codename": "change_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete author",
+    "content_type": 6,
+    "codename": "delete_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view author",
+    "content_type": 6,
+    "codename": "view_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add book",
+    "content_type": 7,
+    "codename": "add_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change book",
+    "content_type": 7,
+    "codename": "change_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete book",
+    "content_type": 7,
+    "codename": "delete_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view book",
+    "content_type": 7,
+    "codename": "view_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add order",
+    "content_type": 8,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change order",
+    "content_type": 8,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete order",
+    "content_type": 8,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view order",
+    "content_type": 8,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add genre",
+    "content_type": 9,
+    "codename": "add_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change genre",
+    "content_type": 9,
+    "codename": "change_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete genre",
+    "content_type": 9,
+    "codename": "delete_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view genre",
+    "content_type": 9,
+    "codename": "view_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add flashsale",
+    "content_type": 10,
+    "codename": "add_flashsale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change flashsale",
+    "content_type": 10,
+    "codename": "change_flashsale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete flashsale",
+    "content_type": 10,
+    "codename": "delete_flashsale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view flashsale",
+    "content_type": 10,
+    "codename": "view_flashsale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add review",
+    "content_type": 11,
+    "codename": "add_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change review",
+    "content_type": 11,
+    "codename": "change_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete review",
+    "content_type": 11,
+    "codename": "delete_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view review",
+    "content_type": 11,
+    "codename": "view_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add bill",
+    "content_type": 12,
+    "codename": "add_bill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change bill",
+    "content_type": 12,
+    "codename": "change_bill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete bill",
+    "content_type": 12,
+    "codename": "delete_bill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view bill",
+    "content_type": 12,
+    "codename": "view_bill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add custom user",
+    "content_type": 13,
+    "codename": "add_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change custom user",
+    "content_type": 13,
+    "codename": "change_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete custom user",
+    "content_type": 13,
+    "codename": "delete_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view custom user",
+    "content_type": 13,
+    "codename": "view_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add questions asked",
+    "content_type": 14,
+    "codename": "add_questionsasked"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change questions asked",
+    "content_type": 14,
+    "codename": "change_questionsasked"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete questions asked",
+    "content_type": 14,
+    "codename": "delete_questionsasked"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view questions asked",
+    "content_type": 14,
+    "codename": "view_questionsasked"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "api",
+    "model": "author"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "api",
+    "model": "book"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "api",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "api",
+    "model": "genre"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "api",
+    "model": "flashsale"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "api",
+    "model": "review"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "billing",
+    "model": "bill"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "sms_auth",
+    "model": "customuser"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "aiagent",
+    "model": "questionsasked"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0dt78wls0v2xa8ff3228rfzucxdyt4f0",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ489CSc8Zol17jQPIluKkQtwdIqWA9s3Me6mR1qWMa5d5nJI6K1CH340pPqRuIN2p3pqOrS7zxHpT9E67vrYkz8vu_h0U6uVbk7N48tknMSBsggXy1jnxmbMJEdBxAAliEQe2xkYymDJ4dANw5KN6fwDbFDel:1vwHsh:HJDJN1eqLdSHjTwSxo5eIWtjJAozCCkzQKJ4Aqi_Lvs",
+    "expire_date": "2026-03-14T10:49:07.555Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7b3lycuovtija4inm9mnhccl67l8uhgp",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ489CSc8Zol17jQPIluKkQtwdIqWA9s3Me6mR1qWMa5d5nJI6K1CH340pPqRuIN2p3pqOrS7zxHpT9E67vrYkz8vu_h0U6uVbk7N48tknMSBsggXy1jnxmbMJEdBxAAliEQe2xkYymDJ4dANw5KN6fwDbFDel:1teAQi:4BFWbra6rhYXCmR3pa1KpDNypvlHwdpnQZQjctLwJmc",
+    "expire_date": "2025-02-15T10:08:48.405Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "nlkpfff59zorsd9sv61esmzp6ntfbw6x",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO1a29wANlSnFSIu0OkFNC-mXkvlmBba9oGLWku7Mw8O_1uCPlBbQflDu3Wee5tXWbku8IPOvi1F3peDvfvoMKo35q0hSgkYZzQky4ukxaelDVEPgipPELwsUijwIhsY9Euaucw4iSDcuz9AesxN4Y:1vF4kB:ilC_ArdM_cmR158RL1DBSsd4oGVRjTCtlQTheeEOVb0",
+    "expire_date": "2025-11-15T06:05:43.328Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zh55v8n65tym9bk1utktzbqw6ghrpr2r",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ489CSc8Zol17jQPIluKkQtwdIqWA9s3Me6mR1qWMa5d5nJI6K1CH340pPqRuIN2p3pqOrS7zxHpT9E67vrYkz8vu_h0U6uVbk7N48tknMSBsggXy1jnxmbMJEdBxAAliEQe2xkYymDJ4dANw5KN6fwDbFDel:1taFb1:QPpg0_4bZ2HX9rRUvuY2rm5rQpOR8SEtvjlqDkgSJZ0",
+    "expire_date": "2025-02-04T14:51:15.605Z"
+  }
+},
+{
+  "model": "api.author",
+  "pk": 1,
+  "fields": {
+    "name": "John Doe",
+    "age": 45
+  }
+},
+{
+  "model": "api.author",
+  "pk": 2,
+  "fields": {
+    "name": "Jane Smith",
+    "age": 38
+  }
+},
+{
+  "model": "api.author",
+  "pk": 3,
+  "fields": {
+    "name": "Michael Johnson",
+    "age": 50
+  }
+},
+{
+  "model": "api.author",
+  "pk": 4,
+  "fields": {
+    "name": "Emily Davis",
+    "age": 42
+  }
+},
+{
+  "model": "api.author",
+  "pk": 5,
+  "fields": {
+    "name": "Robert Brown",
+    "age": 47
+  }
+},
+{
+  "model": "api.author",
+  "pk": 6,
+  "fields": {
+    "name": "Jessica Wilson",
+    "age": 35
+  }
+},
+{
+  "model": "api.author",
+  "pk": 7,
+  "fields": {
+    "name": "David Miller",
+    "age": 55
+  }
+},
+{
+  "model": "api.author",
+  "pk": 8,
+  "fields": {
+    "name": "Sarah Taylor",
+    "age": 39
+  }
+},
+{
+  "model": "api.author",
+  "pk": 9,
+  "fields": {
+    "name": "Daniel Anderson",
+    "age": 44
+  }
+},
+{
+  "model": "api.author",
+  "pk": 10,
+  "fields": {
+    "name": "Laura Martinez",
+    "age": 41
+  }
+},
+{
+  "model": "api.author",
+  "pk": 11,
+  "fields": {
+    "name": "Fotih Duman",
+    "age": 37
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 1,
+  "fields": {
+    "name": "Programming"
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 2,
+  "fields": {
+    "name": "Web Development"
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Machine Learning"
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 4,
+  "fields": {
+    "name": "Data Science"
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 5,
+  "fields": {
+    "name": "JavaScript"
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 6,
+  "fields": {
+    "name": "Software Engineering"
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 7,
+  "fields": {
+    "name": "Cybersecurity"
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 8,
+  "fields": {
+    "name": "Artificial Intelligence"
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 9,
+  "fields": {
+    "name": "Database Systems"
+  }
+},
+{
+  "model": "api.genre",
+  "pk": 10,
+  "fields": {
+    "name": "Cloud Computing"
+  }
+},
+{
+  "model": "api.book",
+  "pk": 1,
+  "fields": {
+    "author": 1,
+    "title": "Django for Beginners",
+    "genre": 1,
+    "cover": "books/covers/Снимок_экрана_2026-02-28_170422.png",
+    "pdf": "",
+    "pages": 320,
+    "description": "A guide to learning Django from scratch.",
+    "price": 25,
+    "stock": 10
+  }
+},
+{
+  "model": "api.book",
+  "pk": 2,
+  "fields": {
+    "author": 2,
+    "title": "Advanced Django",
+    "genre": 2,
+    "cover": "books/covers/Screenshot_2025-05-27_231514.png",
+    "pdf": "books/pdfs/Friendship.pptx",
+    "pages": 450,
+    "description": "Deep dive into Django's advanced features.",
+    "price": 35,
+    "stock": 15
+  }
+},
+{
+  "model": "api.book",
+  "pk": 3,
+  "fields": {
+    "author": 3,
+    "title": "Python Tricks",
+    "genre": 1,
+    "cover": "books/covers/61k7Z74UuZL._AC_UF8941000_QL80_.jpg",
+    "pdf": "",
+    "pages": 280,
+    "description": "A collection of useful Python tricks.",
+    "price": 20,
+    "stock": 5
+  }
+},
+{
+  "model": "api.book",
+  "pk": 4,
+  "fields": {
+    "author": 4,
+    "title": "Flask Web Development",
+    "genre": 3,
+    "cover": "books/covers/Без_названия_25.jpg",
+    "pdf": "",
+    "pages": 350,
+    "description": "Building web apps with Flask.",
+    "price": 30,
+    "stock": 12
+  }
+},
+{
+  "model": "api.book",
+  "pk": 5,
+  "fields": {
+    "author": 5,
+    "title": "RESTful APIs with Django",
+    "genre": 2,
+    "cover": "books/covers/1_d6VpjPiy8gQMwE19bHbRFg.jpg",
+    "pdf": "",
+    "pages": 300,
+    "description": "Learn how to build APIs with Django and DRF.",
+    "price": 28,
+    "stock": 20
+  }
+},
+{
+  "model": "api.book",
+  "pk": 6,
+  "fields": {
+    "author": 6,
+    "title": "Machine Learning with Python",
+    "genre": 4,
+    "cover": "books/covers/978-3-031-33342-2.jpg",
+    "pdf": "",
+    "pages": 500,
+    "description": "An introduction to machine learning using Python.",
+    "price": 40,
+    "stock": 8
+  }
+},
+{
+  "model": "api.book",
+  "pk": 7,
+  "fields": {
+    "author": 7,
+    "title": "Data Science from Scratch",
+    "genre": 4,
+    "cover": "books/covers/1200x900wz.jpg",
+    "pdf": "",
+    "pages": 600,
+    "description": "Learn data science without prior knowledge.",
+    "price": 45,
+    "stock": 5
+  }
+},
+{
+  "model": "api.book",
+  "pk": 8,
+  "fields": {
+    "author": 8,
+    "title": "JavaScript: The Good Parts",
+    "genre": 5,
+    "cover": "books/covers/JavascriptTheGoodParts.JPG",
+    "pdf": "",
+    "pages": 200,
+    "description": "A deep dive into JavaScript essentials.",
+    "price": 18,
+    "stock": 25
+  }
+},
+{
+  "model": "api.book",
+  "pk": 9,
+  "fields": {
+    "author": 9,
+    "title": "You Don't Know JS",
+    "genre": 5,
+    "cover": "books/covers/images.jpg",
+    "pdf": "",
+    "pages": 320,
+    "description": "Understanding JavaScript deeply.",
+    "price": 22,
+    "stock": 18
+  }
+},
+{
+  "model": "api.book",
+  "pk": 10,
+  "fields": {
+    "author": 10,
+    "title": "The Pragmatic Programmer",
+    "genre": 6,
+    "cover": "books/covers/the-paregmaricp.jpg",
+    "pdf": "",
+    "pages": 350,
+    "description": "A must-read for software developers.",
+    "price": 32,
+    "stock": 14
+  }
+},
+{
+  "model": "api.book",
+  "pk": 11,
+  "fields": {
+    "author": 11,
+    "title": "Men(Bas qil ey nafs)",
+    "genre": 4,
+    "cover": "books/covers/crhagrfs09cvvbjrn6f0.jpg",
+    "pdf": "",
+    "pages": 310,
+    "description": "Nafs haqidagi ajoyib kitob",
+    "price": 6,
+    "stock": 0
+  }
+},
+{
+  "model": "api.order",
+  "pk": 1,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T10:09:10.716Z",
+    "status": "Pending",
+    "is_paid": true
+  }
+},
+{
+  "model": "api.order",
+  "pk": 2,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T10:09:45.445Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 3,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T10:10:38.086Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 5,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T10:14:29.741Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 6,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T10:17:15.436Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 7,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T10:17:49.132Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 8,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T10:51:56.727Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 9,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T10:53:11.583Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 10,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T10:54:22.533Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 11,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T11:09:35.661Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 12,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 11,
+    "quantity": 10,
+    "phone_number": "+998270861703",
+    "created_at": "2025-01-31T11:10:28.439Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 13,
+  "fields": {
+    "customer": "Husniyor Azimboyev",
+    "product": 1,
+    "quantity": 3,
+    "phone_number": "+998432658627",
+    "created_at": "2025-11-29T02:18:55.946Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.order",
+  "pk": 14,
+  "fields": {
+    "customer": "Ali Muhammedov",
+    "product": 3,
+    "quantity": 2,
+    "phone_number": "+998138607387",
+    "created_at": "2026-01-20T10:20:51.323Z",
+    "status": "Pending",
+    "is_paid": false
+  }
+},
+{
+  "model": "api.review",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "book": 1,
+    "message": "Very interesting book, with full of action.",
+    "rating": 5,
+    "date": "2025-11-29T02:13:31.755Z"
+  }
+},
+{
+  "model": "api.review",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "book": 1,
+    "message": "Very interesting book, with full of action.",
+    "rating": 4,
+    "date": "2025-11-29T02:13:44.014Z"
+  }
+},
+{
+  "model": "api.review",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "book": 1,
+    "message": "Very interesting book, with full of action.",
+    "rating": 3,
+    "date": "2025-11-29T02:13:48.535Z"
+  }
+},
+{
+  "model": "api.review",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "book": 1,
+    "message": "Very interesting book, with full of action.",
+    "rating": 4,
+    "date": "2025-11-29T02:14:03.170Z"
+  }
+},
+{
+  "model": "api.review",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "book": 1,
+    "message": "Very interesting book, with full of action.",
+    "rating": 1,
+    "date": "2025-11-29T02:16:12.714Z"
+  }
+},
+{
+  "model": "api.flashsale",
+  "pk": 1,
+  "fields": {
+    "book": 1,
+    "discount_perc": 20,
+    "start_time": "2025-01-28T08:00:00Z",
+    "end_time": "2025-01-28T20:00:00Z"
+  }
+},
+{
+  "model": "api.flashsale",
+  "pk": 2,
+  "fields": {
+    "book": 2,
+    "discount_perc": 15,
+    "start_time": "2025-01-25T12:00:00Z",
+    "end_time": "2025-01-29T12:00:00Z"
+  }
+},
+{
+  "model": "api.flashsale",
+  "pk": 3,
+  "fields": {
+    "book": 3,
+    "discount_perc": 25,
+    "start_time": "2025-01-31T10:00:00Z",
+    "end_time": "2025-02-05T10:00:00Z"
+  }
+},
+{
+  "model": "api.flashsale",
+  "pk": 4,
+  "fields": {
+    "book": 4,
+    "discount_perc": 30,
+    "start_time": "2025-01-31T00:00:00Z",
+    "end_time": "2025-02-07T23:59:59Z"
+  }
+},
+{
+  "model": "api.flashsale",
+  "pk": 5,
+  "fields": {
+    "book": 5,
+    "discount_perc": 10,
+    "start_time": "2025-01-20T09:00:00Z",
+    "end_time": "2025-01-25T09:00:00Z"
+  }
+},
+{
+  "model": "api.flashsale",
+  "pk": 6,
+  "fields": {
+    "book": 6,
+    "discount_perc": 50,
+    "start_time": "2025-01-28T00:00:00Z",
+    "end_time": "2025-01-30T23:59:59Z"
+  }
+},
+{
+  "model": "api.flashsale",
+  "pk": 7,
+  "fields": {
+    "book": 7,
+    "discount_perc": 40,
+    "start_time": "2025-01-31T08:00:00Z",
+    "end_time": "2025-02-03T20:00:00Z"
+  }
+},
+{
+  "model": "api.flashsale",
+  "pk": 9,
+  "fields": {
+    "book": 11,
+    "discount_perc": 50,
+    "start_time": "2025-01-31T10:05:24.767Z",
+    "end_time": "2025-02-28T10:05:24.767Z"
+  }
+},
+{
+  "model": "billing.bill",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "stripe_charge_id": "ch_3SYdm1E6gsYA8kp81B6FByT4",
+    "amount": "60.00",
+    "created_at": "2025-11-29T02:20:34.211Z"
+  }
+},
+{
+  "model": "sms_auth.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$RxqIdmpxMvjOitaW2lstlB$/H21g6wFC7TvW+Dqak4sIu96Wg/pDMBR/a8dnHykBjw=",
+    "is_superuser": true,
+    "phone_number": "13521",
+    "first_name": "",
+    "last_name": "",
+    "email": null,
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2025-01-13T17:07:59.699Z",
+    "last_login": "2026-02-28T10:49:07.549Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sms_auth.customuser",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$7h445ASIbVx7T3dJEgk8xs$3XV9pUnZkrtMdV2hOGDqUQJHvYv+WUabZyHeTaAjT5Y=",
+    "is_superuser": false,
+    "phone_number": "+998903198457",
+    "first_name": "",
+    "last_name": "",
+    "email": null,
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-02-01T10:09:12.441Z",
+    "last_login": "2025-02-01T10:09:12.441Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sms_auth.customuser",
+  "pk": 5,
+  "fields": {
+    "password": "",
+    "is_superuser": false,
+    "phone_number": "903198457",
+    "first_name": "",
+    "last_name": "",
+    "email": null,
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-04-13T04:59:38.498Z",
+    "last_login": "2025-04-13T04:59:38.508Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sms_auth.customuser",
+  "pk": 6,
+  "fields": {
+    "password": "",
+    "is_superuser": false,
+    "phone_number": "+998903225784",
+    "first_name": "",
+    "last_name": "",
+    "email": null,
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-04-13T05:15:37.591Z",
+    "last_login": "2025-04-13T05:15:37.602Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sms_auth.customuser",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$IggLzOObFLkyyaWwbbETet$+JyHXO2jYr5GUvemw6k47JqGMbq6Kts3AtV5eODKjSg=",
+    "is_superuser": true,
+    "phone_number": "1234",
+    "first_name": "",
+    "last_name": "",
+    "email": null,
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2025-11-01T06:04:16.775Z",
+    "last_login": "2025-11-01T06:05:43.320Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

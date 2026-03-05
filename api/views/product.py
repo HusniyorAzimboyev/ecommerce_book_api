@@ -9,6 +9,8 @@ from django_filters import rest_framework as django_filters
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from django.utils import timezone
+from django.http import FileResponse
+from django.core.exceptions import ObjectDoesNotExist
 class CustomPagination(PageNumberPagination):
     page_size = 8
 
@@ -42,3 +44,19 @@ class ProductViewSet(ModelViewSet):
             return Response({"message":"There is no reviews yet("})
 
         return Response({"average_rating":sum([review.rating for review in reviews])/reviews.count()})
+
+    @action(detail=True, methods=["GET"])
+    def download_pdf(self, request, pk=None):
+        """Download PDF file with X-Frame-Options header"""
+        book = self.get_object()
+        
+        if not book.pdf:
+            return Response({"error": "PDF file not available"}, status=404)
+        
+        try:
+            response = FileResponse(book.pdf.open('rb'), content_type='application/pdf')
+            response['Content-Disposition'] = f'attachment; filename="{book.title}.pdf"'
+            response['X-Frame-Options'] = 'SAMEORIGIN'
+            return response
+        except ObjectDoesNotExist:
+            return Response({"error": "PDF file not found"}, status=404)
